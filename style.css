@@ -65,7 +65,7 @@ img{
     padding: 0 20px;
 }
 
-.sefction-title{
+.section-title{
     text-align: center;
     padding: 60px 0 100px;
     text-transform: uppercase;
@@ -77,7 +77,7 @@ img{
     width: 80px;
     height: 5px;
     display: block;
-    margin: 10px  /*auto*/  ;
+    margin: 10px  auto 0 ;
     background: var(--secondary-color);
     border-radius: var(--border-radius-s);
     
@@ -247,7 +247,64 @@ padding: 0;
 .about-section .social-link-list .social-link:hover{
     color: var(--secondary-color);
 }
-/* Gere le responsive de la page */
+
+/* Formations sections*/
+.formation-section {
+    color: var(--white-color);
+    background: var(--dark-color);
+    padding: 50px 0 100px;
+}
+
+.formation-section  .formation-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 110px;
+    justify-content: space-between;
+}
+
+.formation-section .formation-list .formation-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    width: calc(100% / 3 - 110px);
+}
+
+.formation-section .formation-list .formation-item .formation-image{
+    max-width: 83%;
+    aspect-ratio: 1;
+    margin-bottom: 15px;
+    object-fit: contain;
+
+}
+
+.formation-section .formation-list .formation-item .name {
+    margin: 12px 0;
+    font-size: var(--font-size-l);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.formation-section .formation-list .formation-item .text{
+    font-size: var(--font-size-m);
+    text-align: justify;
+}
+
+
+/* Responsive media query code for max width 1024px */
+@media screen and (max-width:900px){
+    .formation-section .formation-list{
+        gap: 60px;
+    }
+
+
+    .formation-section .formation-list .formation-item {
+        width: calc(100% / 3 - 60px);
+    }
+}
+
+/* Responsive media query code for max width 900px */
 @media screen and (max-width:900px)
 {   
     :root{
@@ -343,4 +400,27 @@ padding: 0;
         max-width: 250px;
         aspect-ratio: 1;
     }
-}    
+    .formation-section .formation-list{
+        gap: 30px;
+    }
+    .formation-section .formation-list .formation-item {
+        width: calc(100% / 2 - 30px);
+    }
+
+    .formation-section .formation-list .formation-item .formation-image {
+        max-width: 200px;
+    }
+}
+/* Responsive media query code for max width 1024px */
+@media screen and (max-width:640px){
+
+    .formation-section .formation-list{
+        gap: 60px;
+    }
+
+    .formation-section .formation-list .formation-item {
+        width: 100%;
+    }
+    
+}
+  

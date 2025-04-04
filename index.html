@@ -14,29 +14,33 @@
     <!--Header | Navbar -->
    <header>
     <nav class="navbar section-content">
-        <a href="https://github.com/2850-johan"  class="nav-logo" >
+        <a href="#"  class="nav-logo" >
             <h2 class="logo-text"> 👨🏾‍💻 Johan Christian</h2>
         </a>
         <ul class="nav-menu">
              <!-- Icones pour le coté gauche de la page ( croix) -->
             <button id="menu-close-button" class="fas fa-times"></button>
             <li class="nav-item">
-                <a href="#" class="nav-link">About Us</a>
+                <a href="#about" class="nav-link">About Us</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Formations</a>
+                <a href="#formations" class="nav-link">Formations</a>
             </li>
+
             <li class="nav-item">
-                <a href="#" class="nav-link"> Mes expériences </a>
+                <a href="#hobbies" class="nav-link"> Mes Hobbies </a>
             </li>
+
             <li class="nav-item">
-                <a href="#" class="nav-link">Bénevolats </a>
+                <a href="#mesexperiences" class="nav-link"> Mes expériences </a>
             </li>
+
             <li class="nav-item">
-                <a href="#" class="nav-link"> Mes Hobbies </a>
+                <a href="#benevolats" class="nav-link">Bénevolats </a>
             </li>
+           
             <li class="nav-item">
-                <a href="#" class="nav-link">Contact</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </li>
 
         </ul>
@@ -55,7 +59,7 @@
                     <p class="description">Passioné par le domaine de l’informatique plus précisement la cyberscurité.  Je poursuis actuellement mes études en deuxième année de Bachelor au campus d'Angers de l'ESAIP, avec une volonté inébranlable de developper mes compétences et de me spécialisée dans ce domaine dynamique et en constante évolution . 
                     <div class="buttons">
                         <a href="CV-JOHAN KAMFOUO ALTERANCE.pdf" class="button order-now" >Mon CV</a>
-                        <a href="#" class="button  contact-us" >Contact Us</a>
+                        <a href="https://github.com/2850-johan" class="button  contact-us" >Mon Github</a>
                     </div>
                 </div>
                 <div class="hero-image-wrapper">
@@ -65,7 +69,7 @@
         </section>
 
          <!-- About section  -->
-         <section class="about-section">
+        <section class="about-section"  id="about" >
             <div class="section-content">
                 <div class="about-image-wrapper">
                     <img src="Images/esaip echarpe.jpg" alt="hack"   class="about-image" >
@@ -88,10 +92,10 @@
 
                 </div>
             </div>
-         </section>
+        </section>
 
           <!-- Section Formation  -->
-           <section class="formation-section">
+        <section class="formation-section"   id="formations" >
             <h2 class="section-title">Our Formations</h2>
             <div class="section-content">
                 <ul class="formation-list">
@@ -138,10 +142,10 @@
                     </li>
                 </ul>
             </div>
-           </section>
+        </section>
 
         <!-- Section Hobbies  -->
-         <section class="hobbies-section">
+         <section class="hobbies-section" id="hobbies"  >
             <h2 class="section-title">Mes Hobbies</h2>
                 <div class="section-content">
                     <div class="slider-container swiper">
@@ -195,7 +199,7 @@
 
          </section>
          <!-- Section My experiences  -->
-         <section class="formation-section">
+         <section class="formation-section"  id="mesexperiences" >
             <h2 class="section-title">MY expEriences</h2>
             <div class="section-content">
                 <ul class="formation-list">
@@ -220,9 +224,48 @@
                     </li>
                 </ul>
             </div>
-           </section>
+         </section>
+
+           <!-- Section Benevolats  -->
+           <section class="hobbies-section" id="benevolats"  >
+            <h2 class="section-title">Mes Benevolats</h2>
+                <div class="section-content">
+                    <div class="slider-container swiper">
+                        <div class="slider-wrapper">
+                            <ul class="hobbies-list  swiper-wrapper">
+                                <li class="hobbies swiper-slide">
+                                    <img src="Images/cyber2.jpeg" class="user-image">
+                                    <h3 class="name">La Cybersécurité</h3>
+                                    <i class="feedback"> ggbiuegheiu </i>
+                                </li>
+
+                                <li class="hobbies swiper-slide">
+                                    <img src="Images/lecture.jpeg" class="user-image">
+                                    <h3 class="name">La Lecture </h3>
+                                    <i class="feedback"> gfieghgbiuegheiu </i>
+                                </li>
+
+                                <li class="hobbies swiper-slide">
+                                    <img src="Images/culture gneral.jpg" class="user-image">
+                                    <h3 class="name">La culture generale</h3>
+                                    <i class="feedback"> ghkjsjbgiuerhguerhgieruhgtuaegiqbgiuegbiuegheiu </i>
+                                </li>
+
+                                
+                            </ul>
+
+                            <div class=" swiper-pagination"></div>
+                            <div class=" swipper-slide-button  swiper-button-prev"></div>
+                            <div class=" swipper-slide-button  swiper-button-next"></div>
+                          
+
+                        </div>
+                    </div>
+                </div>
+
+         </section>
             <!-- Section Contact -->
-             <section class="contact-section">
+         <section class="contact-section" id="contact" >
                 <h2 class="section-title">Contact Us</h2>
                 <div class="section-content">
                     <ul class="contact-info-list">
@@ -243,8 +286,8 @@
                         </li>
 
                     </ul>
-
-                    <form action="#" class="contact-form">
+                    <!--   
+                     <form action="#" class="contact-form">
                         <input type="text" placeholder="Your name" class="form-input"  required >
     
                         <input type="email" placeholder="Your email" class="form-input"  required>
@@ -254,13 +297,39 @@
                         <button class="submit-button">Submit</button>
     
                     </form>
+                     -->
+                 
+
+                    <form action="contact.php" method="POST" class="contact-form">
+                        <input type="text" name="name" placeholder="Your name" class="form-input" required>
+                        <input type="email" name="email" placeholder="Your email" class="form-input" required>
+                        <textarea name="message" placeholder="Your message" class="form-input" required></textarea>
+                        <button class="submit-button">Submit</button>
+                    </form>
+                    
                 </div>
-             </section>
+         </section>
+
+
+
+
 
              <!-- Section Footer -->
-              <footer class="sooter-section">
+              <footer class="footer-section">
                 <div class="section-content">
-                    <p class="copyright-text"> ©  </p>
+                    <p class="copyright-text"> © 2025 Johan Website </p>
+
+                    <div class="social-link-list">
+                        <a href="https://www.facebook.com/johan.kamfouo" class="social-link"> <i class="fa-brands fa-facebook"></i> </a>
+                        <a href="#" class="social-link"> <i class="fa-brands fa-instagram"></i> </a>
+                        <a href="https://x.com/home" class="social-link"> <i class="fa-brands fa-x-twitter"></i> </a>
+    
+                    </div>
+                    <p class="policy-text">
+                        <a href="" class="policy-link">Privacy Policy</a>
+                        <span class="separator">--</span>
+                        <a href="" class="policy-link">Refund Policy</a>
+                    </p>
                 </div>
               </footer>
 
